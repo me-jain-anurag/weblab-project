@@ -1,0 +1,79 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore all files in data directory
+data/*
+
+# But keep the data directory and .gitkeep
+!data/.gitkeep
+
+# PHP-specific
+vendor/
+composer.lock
+.phpunit.result.cache
+
+# Perl-specific
+*.pid
+*.bak
+*.old
+
+# Temporary Files
+*.tmp
+*.log
+*.temp
+
+# Security and Sensitive Data
+*.env
+.env.local
+.env.development
+.env.production
+
+# Dependency Directories
+node_modules/
+bower_components/
+
+# Backup Files
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# Compiled Sources
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compressed Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Build Output
+dist/
+build/
+out/
+
+# Miscellaneous
+.temp/
+.cache/
+
+# Web Server Specific
+.htaccess

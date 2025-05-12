@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ticket Booking System</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+<body>
+    <div id="booking-container">
+        <h1>Event Ticket Booking</h1>
+        
+        <form id="ticket-form" action="backend/book_ticket.php" method="post">
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Choose an Event</option>
+                    <option value="concert">Summer Music Concert</option>
+                    <option value="theater">Broadway Theater Show</option>
+                    <option value="sports">Championship Game</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            
+            <div id="seat-selection">
+                <h2>Select Seats</h2>
+                <div id="seat-map"></div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="book-btn">Book Tickets</button>
+            </div>
+        </form>
+        
+        <div id="booking-status"></div>
+    </div>
+
+    <script src="scripts/booking.js"></script>
+</body>
+</html>

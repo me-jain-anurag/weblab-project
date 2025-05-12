@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#booking-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#book-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#book-btn:hover {
+    background-color: #45a049;
+}
+
+#seat-map {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.seat {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #2ecc71;
+}
+
+.seat.booked {
+    background-color: #e74c3c;
+    cursor: not-allowed;
+}
+
+#booking-status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
