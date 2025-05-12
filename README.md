@@ -54,7 +54,7 @@ ticket-booking-system/
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repo/ticket-booking-system.git
+   git clone https://github.com/me-jain-anurag/weblab-project.git
    ```
 
 2. **Configure Web Server**
