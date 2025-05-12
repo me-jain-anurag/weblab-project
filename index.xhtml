@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,7 +14,7 @@
         <form id="ticket-form" action="backend/book_ticket.php" method="post">
             <div class="form-group">
                 <label for="event">Select Event:</label>
-                <select id="event" name="event" required>
+                <select id="event" name="event" required="required">
                     <option value="">Choose an Event</option>
                     <option value="concert">Summer Music Concert</option>
                     <option value="theater">Broadway Theater Show</option>
@@ -24,22 +24,22 @@
             
             <div class="form-group">
                 <label for="date">Select Date:</label>
-                <input type="date" id="date" name="date" required />
+                <input type="date" id="date" name="date" required="required" />
             </div>
             
             <div class="form-group">
                 <label for="tickets">Number of Tickets:</label>
-                <input type="number" id="tickets" name="tickets" min="1" max="10" required />
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required="required" />
             </div>
             
             <div class="form-group">
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required="required" />
             </div>
             
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" required="required" />
             </div>
             
             <div id="seat-selection">
